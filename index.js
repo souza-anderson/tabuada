@@ -12,4 +12,4 @@ app.use(express.static('public'))
 app.use('/', indexRouter)
 app.use('/tabuadas', tabuadaRouter)
 
-app.listen(port, () => console.log('Tabuada server is listenning on port ' + port))
+app.listen(port, () => console.log('Tabuada server is listening on port ' + port))
