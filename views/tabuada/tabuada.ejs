@@ -2,15 +2,15 @@
 <div class="starter-template">
   <h1>Tabuada do número <%= num %></h1>
   <table class="table table-striped table-bordered table-hover table-responsive">
-    <% for (let i = 0; i <= 100; i++) {%>
+    <% numeros.map(item => { %>
       <tr>
-        <td><%= num %></td>
+        <td><%= item.num %></td>
         <td>&nbsp; x &nbsp;</td>
-        <td><%= i %></td>
+        <td><%= item.i %></td>
         <td>&nbsp; = &nbsp;</td>
-        <td><%= num * i  %></td>
+        <td><%= item.resultado %></td>
       </tr>
-    <% } %>
+    <% }) %>
   </table>
 </div>
 <%- include('../partials/footer') %>
