@@ -20,10 +20,7 @@ describe('tabuada controller', () => {
             render: function(){},
         }
         const tabuadas = []
-        let req = {
-            params: { num: 10 }
-        }
-        const num = req.params.num       
+        const num = 10
         for (let i = 0; i <= 100; i++) {
             tabuadas.push({
             i,
@@ -37,6 +34,6 @@ describe('tabuada controller', () => {
             tabuadas,
             num
         })
-        tabuadaController.tabuada(req, res)
+        tabuadaController.tabuada({ params: { num } }, res)
     })
 })
