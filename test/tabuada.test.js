@@ -1,5 +1,5 @@
 const sinon = require('sinon')
-const tabuadaController = require('./tabuada')
+const tabuadaController = require('../controllers/tabuada')
 
 describe('tabuada controller', () => {
     it('renders list', () => {

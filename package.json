@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha **/*.test.js --reporter spec",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha ./test/**/*.test.js --reporter spec",
+    "coverage": "nyc mocha ./test/**/*.test.js --reporter spec"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "mocha": "^8.3.2",
-    "sinon": "2.4.1"
+    "nyc": "^15.1.0",
+    "sinon": "^10.0.0"
   }
 }

@@ -1,5 +1,5 @@
 const sinon = require('sinon')
-const indexController = require('./index')
+const indexController = require('../controllers/index')
 
 describe('index controller', () => {
     it('renders home', () => {
